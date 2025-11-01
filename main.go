@@ -1,7 +1,7 @@
 package main
 
 import (
-	"crypto/md5"
+	"crypto/sha256"
 	"database/sql"
 	"encoding/base64"
 	"fmt"
@@ -79,8 +79,8 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 
 // VULNERABILITY 7: Weak Cryptography - MD5 (Semgrep)
 func hashPassword(password string) string {
-	// MD5 is cryptographically broken
-	hasher := md5.New()
+	// Using SHA256 instead of MD5
+	hasher := sha256.New()
 	hasher.Write([]byte(password))
 	return fmt.Sprintf("%x", hasher.Sum(nil))
 }
