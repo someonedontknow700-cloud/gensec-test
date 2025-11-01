@@ -58,9 +58,9 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 	defer db.Close()
 
 	userID := r.URL.Query().Get("id")
-	// String concatenation = SQL injection
-	query := "SELECT name, email, password FROM users WHERE id = '" + userID + "'"
-	rows, err := db.Query(query)
+	// Using parameterized query to prevent SQL injection
+	query := "SELECT name, email, password FROM users WHERE id = ?"
+	rows, err := db.Query(query, userID)
 	if err != nil {
 		// VULNERABILITY 5: Error message disclosure (Semgrep G104)
 		http.Error(w, err.Error(), http.StatusInternalServerError)
