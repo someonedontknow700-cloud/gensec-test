@@ -1,0 +1,2164 @@
+nohup: ignoring input
+INFO:     Started server process [102504]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:57288 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49334 - "POST /scan HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 4 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 4 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.crypto.use_of_weak_crypto.use-of-md5 (Tool: semgrep)
+   File: main.go (Line: 83)
+   Message: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is ther...
+🔍 (GitHub): Found 0 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+ℹ️  (GitHub): No open GenSec PRs found in someonedontknow700-cloud/gensec-test (ignored 0 other PRs)
+🤖 (Fixer): Analyzing finding to select expert prompt...
+🌐 (Fixer): Detected language: Go
+ℹ️  (Fixer): Selected 'Go Default Expert'
+🤖 (Fixer): Sending prompt to Groq (llama-3.3-70b-versatile)...
+✅ (Fixer): Fix generated.
+🤖 (Verifier): Verifying fix for go.lang.security.audit.crypto.use_of_weak_crypto.use-of-md5 in main.go...
+ℹ️  (Verifier): Re-running Semgrep on fixed code...
+✅ (Verifier): PASSED. The vulnerability 'go.lang.security.audit.crypto.use_of_weak_crypto.use-of-md5' is fixed.
+🤖 (GitHub): Creating PR for file: main.go...
+🎉 PR created: https://github.com/someonedontknow700-cloud/gensec-test/pull/2
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 4 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 4 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.crypto.use_of_weak_crypto.use-of-md5 (Tool: semgrep)
+   File: main.go (Line: 83)
+   Message: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is ther...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #2 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957295)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51614 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51622 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51634 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51614 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 4 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 4 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.crypto.use_of_weak_crypto.use-of-md5 (Tool: semgrep)
+   File: main.go (Line: 83)
+   Message: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is ther...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #2 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957295)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51622 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51634 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51614 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51614 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51622 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51634 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 4 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 4 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.crypto.use_of_weak_crypto.use-of-md5 (Tool: semgrep)
+   File: main.go (Line: 83)
+   Message: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is ther...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #2 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957295)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:51634 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51614 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51622 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51622 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51634 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 4 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 4 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.crypto.use_of_weak_crypto.use-of-md5 (Tool: semgrep)
+   File: main.go (Line: 83)
+   Message: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is ther...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #2 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957295)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:51614 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51634 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51622 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51622 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51634 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51614 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51634 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 4 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 4 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.crypto.use_of_weak_crypto.use-of-md5 (Tool: semgrep)
+   File: main.go (Line: 83)
+   Message: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is ther...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #2 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957295)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:51622 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51614 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51634 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51622 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51634 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51614 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51622 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 4 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 4 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.crypto.use_of_weak_crypto.use-of-md5 (Tool: semgrep)
+   File: main.go (Line: 83)
+   Message: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is ther...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #2 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957295)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:51634 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51614 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51622 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51622 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51634 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51614 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 4 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 4 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.crypto.use_of_weak_crypto.use-of-md5 (Tool: semgrep)
+   File: main.go (Line: 83)
+   Message: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is ther...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #2 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957295)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51634 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51622 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51614 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51634 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51614 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 4 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 4 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.crypto.use_of_weak_crypto.use-of-md5 (Tool: semgrep)
+   File: main.go (Line: 83)
+   Message: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is ther...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #2 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957295)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:51622 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51634 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51614 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51622 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51634 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 4 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 4 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.crypto.use_of_weak_crypto.use-of-md5 (Tool: semgrep)
+   File: main.go (Line: 83)
+   Message: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is ther...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #2 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957295)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:51614 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51634 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51622 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57472 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51622 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51634 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51616 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51614 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57478 - "GET /status/298d33dd-22e8-421b-908c-176aa436f5a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47060 - "OPTIONS /scan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47060 - "POST /scan HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 6 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 6 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #2 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957295)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:34804 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34804 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 6 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 6 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #2 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957295)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:34804 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41622 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34804 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41638 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41622 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41646 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34804 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41652 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50658 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41638 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41622 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 6 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 6 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 0 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+ℹ️  (GitHub): No open GenSec PRs found in someonedontknow700-cloud/gensec-test (ignored 0 other PRs)
+🤖 (Fixer): Analyzing finding to select expert prompt...
+🌐 (Fixer): Detected language: Go
+ℹ️  (Fixer): Selected 'Go Sql Injection Expert'
+🤖 (Fixer): Sending prompt to Groq (llama-3.3-70b-versatile)...
+✅ (Fixer): Fix generated.
+🤖 (Verifier): Verifying fix for go.lang.security.audit.database.string-formatted-query.string-formatted-query in main.go...
+ℹ️  (Verifier): Re-running Semgrep on fixed code...
+✅ (Verifier): PASSED. The vulnerability 'go.lang.security.audit.database.string-formatted-query.string-formatted-query' is fixed.
+🤖 (GitHub): Creating PR for file: main.go...
+🎉 PR created: https://github.com/someonedontknow700-cloud/gensec-test/pull/3
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:41646 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34804 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41652 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50658 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41638 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41622 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50658 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41622 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34804 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41638 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41646 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41652 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50658 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34804 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41622 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50658 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41638 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41646 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41652 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:34804 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41622 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50658 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41638 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41646 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41652 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41622 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34804 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41638 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41646 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50658 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41652 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:41622 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34804 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41638 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41646 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50658 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41652 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50658 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41622 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34804 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41638 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41646 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41652 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:50658 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41622 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34804 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41638 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41646 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41652 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41622 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50658 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41652 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34804 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41638 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41646 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:41622 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50658 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41652 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34804 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41638 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41646 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41622 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50658 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41652 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34804 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41638 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:41646 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41622 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50658 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41652 - "GET /status/2bde75a6-67b4-47c9-afec-2319be632980 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:44356 - "POST /scan HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37984 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55872 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37972 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37962 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37966 - "GET /status/a7b1c7c9-408b-4705-a6e1-739678fdb9bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41058 - "OPTIONS /scan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41058 - "POST /scan HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:55330 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55330 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:55330 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40108 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55330 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40120 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40108 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40128 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40120 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55330 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60878 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40128 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60890 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40108 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60878 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55330 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:40120 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40128 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60890 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40108 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60878 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55330 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55330 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60890 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40108 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40120 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40128 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60878 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55330 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60890 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:40120 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40128 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60878 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40108 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55330 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60890 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55330 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40108 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40128 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60878 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60890 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40120 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #3 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761957830)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:55330 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60878 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40108 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40128 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60890 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40120 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60890 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55330 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40108 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40120 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40128 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60878 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60890 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 5 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 5 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.audit.database.string-formatted-query.string-formatted-query (Tool: semgrep)
+   File: main.go (Line: 62)
+   Message: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized...
+🔍 (GitHub): Found 0 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+ℹ️  (GitHub): No open GenSec PRs found in someonedontknow700-cloud/gensec-test (ignored 0 other PRs)
+🤖 (Fixer): Analyzing finding to select expert prompt...
+🌐 (Fixer): Detected language: Go
+ℹ️  (Fixer): Selected 'Go Sql Injection Expert'
+🤖 (Fixer): Sending prompt to Groq (llama-3.3-70b-versatile)...
+✅ (Fixer): Fix generated.
+🤖 (Verifier): Verifying fix for go.lang.security.audit.database.string-formatted-query.string-formatted-query in main.go...
+ℹ️  (Verifier): Re-running Semgrep on fixed code...
+✅ (Verifier): PASSED. The vulnerability 'go.lang.security.audit.database.string-formatted-query.string-formatted-query' is fixed.
+🤖 (GitHub): Creating PR for file: main.go...
+🎉 PR created: https://github.com/someonedontknow700-cloud/gensec-test/pull/4
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:40120 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55330 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40108 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40128 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60878 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60890 - "GET /status/e898f8ef-07d7-4190-be30-6a2e90389aa1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42126 - "POST /scan HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:52662 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:52672 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:52678 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:52684 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:52690 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:52988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58028 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50818 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60198 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33988 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33994 - "GET /status/4b27837d-06c3-4bd2-90f7-25180f5808a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55840 - "OPTIONS /scan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55840 - "POST /scan HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50502 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50502 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50502 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50502 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:50502 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50502 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50502 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50502 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50502 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50502 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50502 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50502 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50502 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+🤖 (GitHub): Cloning someonedontknow700-cloud/gensec-test into workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cloned repo successfully.
+🤖 (Scanner): Running scanners for plan: free on workspace-someonedontknow700-cloud-gensec-test-e069391f...
+ℹ️  (Scanner): Running Semgrep with multi-language support...
+🔍 (Scanner): Running semgrep scan...
+✅ (Scanner): Semgrep completed with return code 1
+✅ (Scanner): Found 3 vulnerabilities in report.json
+✅ (Scanner): Scan complete. At least one vulnerability was found.
+🤖 (Parser): Consolidating and prioritizing reports...
+ℹ️  (Parser): Parsing Semgrep report...
+🤖 (Parser): Prioritizing 3 total findings...
+
+✅ (Parser): Highest priority: go.lang.security.injection.raw-html-format.raw-html-format (Tool: semgrep)
+   File: main.go (Line: 112)
+   Message: Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassi...
+🔍 (GitHub): Found 1 open PR(s) in someonedontknow700-cloud/gensec-test (checking for GenSec PRs only)
+✅ (GitHub): Found open GenSec PR #4 in someonedontknow700-cloud/gensec-test
+   ✓ Body contains: 'Auto-generated fix by GenSec'
+   ✓ Branch starts with: 'gensec-fix-' (gensec-fix-1761965142)
+   ✓ Contains agent identifier: 'GenSec security scanning agent'
+   ✓ Title: Fix: String-formatted SQL query detected. This could lead to SQL injection if the string is not sanitized properly. Audit this call to ensure the SQL is not manipulable by external data.
+   ℹ️  This is a GenSec agent PR - will wait for merge
+ℹ️  (GitHub): Cleaning old workspace-someonedontknow700-cloud-gensec-test-e069391f...
+✅ (GitHub): Cleaned workspace successfully
+INFO:     127.0.0.1:50502 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50468 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50502 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50454 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47956 - "GET /status/40d51dbf-7af3-4e6c-a753-aac56e328103 HTTP/1.1" 200 OK

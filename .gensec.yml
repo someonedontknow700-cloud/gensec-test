@@ -1,0 +1,12 @@
+# A list of paths to scan. "." means the whole repository.
+# You could also use: ["src/", "pkg/"]
+scan_paths:
+  - "."
+
+# A list of paths to ALWAYS ignore.
+ignore_paths:
+  - "agent_v3.py"
+  - "requirements.txt"
+  - ".github/"
+  - "README.md"
+  - ".gensec.yml"

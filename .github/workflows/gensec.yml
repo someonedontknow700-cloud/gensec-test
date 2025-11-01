@@ -1,0 +1,82 @@
+name: GenSec Agent - Self-Healing
+
+on:
+  schedule:
+    - cron: '0 1 * * *'  # Daily full scan at 1 AM (optional - can remove if using manual trigger only)
+  workflow_dispatch:  # Manual trigger - agent runs in continuous loop until all vulnerabilities fixed
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    # One Agent Per Repository Architecture
+    # Each matrix job spawns a separate agent instance that handles ONE repository
+    # This provides isolation: failures in one repo don't affect others
+    strategy:
+      fail-fast: false  # Don't stop other agents if one fails
+      matrix:
+        repo: 
+          - 'shivansh-source/gensec-test-secret'
+          - 'shivansh-source/gensec-test-cmd'
+          - 'shivansh-source/gensec-test-path'
+    
+    env:
+      USER_PLAN: ${{ secrets.USER_PLAN || 'pro' }}
+      GITHUB_TOKEN: ${{ secrets.GENSEC_AGENT_TOKEN }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      # Each agent instance handles only ONE repository (from matrix)
+      GITHUB_REPOS: ${{ matrix.repo }}
+    
+    steps:
+      - name: 1. Checkout repository code
+        uses: actions/checkout@v4
+      
+      - name: 2. Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: 3. Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: 4. Install Pro Tools (Gitleaks & Trivy)
+        if: env.USER_PLAN == 'pro' || env.USER_PLAN == 'enterprise'
+        run: |
+          echo "Installing Pro tools..."
+          sudo apt-get update
+          sudo apt-get install -y wget apt-transport-https gnupg lsb-release
+          wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | gpg --dearmor | sudo tee /usr/share/keyrings/trivy.gpg > /dev/null
+          echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main" | sudo tee -a /etc/apt/sources.list.d/trivy.list
+          sudo apt-get update
+          sudo apt-get install -y trivy
+          GITLEAKS_TAG="v8.18.4"
+          GITLEAKS_VERSION="8.18.4"
+          wget https://github.com/gitleaks/gitleaks/releases/download/${GITLEAKS_TAG}/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz
+          tar -xzf gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz
+          sudo mv gitleaks /usr/local/bin/
+
+      - name: 5. Log trigger info
+        run: |
+          echo "=========================================="
+          echo "🚀 GenSec Agent - Single Repository Instance"
+          echo "=========================================="
+          echo "🏗️  Architecture: One Agent Per Repository"
+          echo "⏰ Current Time: $(date)"
+          echo "📅 Trigger: ${{ github.event_name }}"
+          echo "🎯 Target Repo: ${{ matrix.repo }}"
+          echo "🤖 Agent Instance: Dedicated to ${{ matrix.repo }} only"
+          echo "🔄 Workflow Run: ${{ github.run_id }}"
+          echo "🔗 Run URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          echo ""
+          echo "Mode: Continuous Loop"
+          echo "      - Agent runs continuously until all vulnerabilities are fixed"
+          echo "      - Fresh clone each iteration shows merged PRs automatically"
+          echo "      - No wait time - loops immediately after PR creation"
+          echo "      - Stops when no vulnerabilities found"
+          echo ""
+          echo "Note: This agent instance is dedicated to ${{ matrix.repo }}"
+          echo "      Other repositories run in separate parallel agents"
+          echo "      Each agent loops independently until its repo is secure"
+          echo "=========================================="
+
+      - name: 6. Run the GenSec Agent
+        run: python main.py

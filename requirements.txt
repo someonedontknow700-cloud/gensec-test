@@ -1,0 +1,6 @@
+groq
+PyGithub
+semgrep
+pyyaml
+fastapi
+uvicorn[standard]

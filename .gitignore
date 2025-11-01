@@ -1,0 +1,13 @@
+# Semgrep scan reports
+report.json
+verify_report.json
+report-gitleaks.json
+report-trivy.json
+
+# Fixed code (temporary)
+fixed_app.go
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/frontend/.env
